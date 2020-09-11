@@ -12,7 +12,7 @@
   "author": "John Teske",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^0.7.0",
-    "serve": "^11.1.0"
+    "@11ty/eleventy": "^0.11.0",
+    "serve": "^11.3.2"
   }
 }
