@@ -7,11 +7,15 @@
   },
   "scripts": {
     "build": "eleventy",
-    "serve": "serve -n -l 8081 _site"
+    "serve": "eleventy --serve",
+    "deploy": "SITE_BASE_URL=todo npm run build && gh-pages -d _site",
+    "format": "prettier \"**/*.{css,js,json,html,md}\" --write"
   },
   "author": "John Teske",
   "license": "MIT",
   "dependencies": {
+    "eleventy-lib": "git+ssh://git@github.com/johnteske/eleventy-lib.git",
+    "gh-pages": "^2.2.0",
     "@11ty/eleventy": "^0.11.0",
     "serve": "^11.3.2"
   }
